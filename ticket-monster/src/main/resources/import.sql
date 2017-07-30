@@ -46,10 +46,8 @@ insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.co
 insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Paris_Opera_full_frontal_architecture%2C_May_2009.jpg/800px-Paris_Opera_full_frontal_architecture%2C_May_2009.jpg');
 -- MediaItem 23
 insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Boston_Symphony_Hall_from_the_south.jpg/800px-Boston_Symphony_Hall_from_the_south.jpg');
-
 -- Venue 1
 insert into Venue ( name, city, country, street, description, mediaitem_id, capacity) values ( 'Roy Thomson Hall', 'Toronto', 'Canada', '60 Simcoe Street','Roy Thomson Hall is the home of the Toronto Symphony Orchestra and the Toronto Mendelssohn Choir.',4, 11000);
-
 -- Section 1
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'A', 'Premier platinum reserve',20, 100, 1);
 -- Section 2
@@ -58,10 +56,8 @@ insert into Section ( name, description, numberofrows, rowcapacity, venue_id) va
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'C', 'Premier silver reserve', 30, 100, 1);
 -- section 4
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'D', 'General', 40, 100, 1);
-
 -- Venue 2
 insert into Venue ( name, city, country, street, description, mediaitem_id, capacity) values ( 'Sydney Opera House', 'Sydney', 'Australia', 'Bennelong point', 'The Sydney Opera House is a multi-venue performing arts centre in Sydney, New South Wales, Australia' ,3, 15030);
-
 -- Section 5
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'S1', 'Front left', 50, 50, 2);
 -- Section 6
@@ -76,10 +72,8 @@ insert into Section ( name, description, numberofrows, rowcapacity, venue_id) va
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'S6', 'Rear right', 50, 50, 2);
 -- Section 11
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'S7', 'Balcony', 1, 30, 2);
-
 -- Venue 3
 insert into Venue ( name, city, country, street, description, mediaitem_id, capacity) values ( 'BMO Field', 'Toronto', 'Canada', '170 Princes Boulevard','BMO Field is a Canadian soccer stadium located in Exhibition Place in the city of Toronto.',5, 30000);
-
 -- Section 12
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'A', 'Premier platinum reserve',40, 100, 3);
 -- Section 13
@@ -88,11 +82,8 @@ insert into Section ( name, description, numberofrows, rowcapacity, venue_id) va
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'C', 'Premier silver reserve', 30, 200, 3);
 -- Section 15
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'D', 'General', 80, 200, 3);
-
 -- Venue 4
-
 insert into Venue ( name, city, country, street, description, mediaitem_id, capacity) values ( 'Opera Garnier', 'Paris', 'France', '8 Rue Scribe','The Palais Garnier is a 1,979-seat opera house, which was built from 1861 to 1875 for the Paris Opera.', 23, 1972);
-
 -- Section 16
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'A', 'Center',10, 60, 4);
 -- Section 17
@@ -101,11 +92,8 @@ insert into Section ( name, description, numberofrows, rowcapacity, venue_id) va
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'C', 'Right', 10, 41, 4);
 -- Section 19
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'D', 'Balcony', 6, 92, 4);
-
 -- Venue 5
-
 insert into Venue ( name, city, country, street, description, mediaitem_id, capacity) values ( 'Boston Symphony Hall', 'Boston', 'USA', '301 Massachusetts Avenue','Designed by McKim, Mead and White, it was built in 1900 for the Boston Symphony Orchestra, which continues to make the hall its home. The hall was designated a U.S. National Historic Landmark in 1999.', 24, 1972);
-
 -- Section 20
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'A', 'Center',10, 60, 5);
 -- Section 21
@@ -114,7 +102,6 @@ insert into Section ( name, description, numberofrows, rowcapacity, venue_id) va
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'C', 'Right', 10, 41, 5);
 -- Section 23
 insert into Section ( name, description, numberofrows, rowcapacity, venue_id) values ( 'D', 'Balcony', 6, 92, 5);
-
 -- EventCategory 1
 insert into EventCategory ( description) values ( 'Concert');
 -- EventCategory 2
@@ -125,12 +112,10 @@ insert into EventCategory ( description) values ( 'Musical');
 insert into EventCategory ( description) values ( 'Sporting');
 -- EventCategory 5
 insert into EventCategory ( description) values ( 'Comedy');
-
 -- TicketCategory 1
 insert into TicketCategory ( description) values ( 'Adult');
 -- TicketCategory 2
 insert into TicketCategory ( description) values ( 'Child 0-14yrs');
-
 -- Event 1
 insert into Event ( name, description, mediaitem_id, category_id) values ( 'Rock concert of the decade', 'Get ready to rock your night away with this megaconcert extravaganza from 10 of the biggest rock stars of the 80''s', 1, 1);
 -- Event 2
@@ -169,29 +154,23 @@ insert into Event ( name, description, mediaitem_id, category_id) values ( 'Slap
 insert into Event ( name, description, mediaitem_id, category_id) values ( 'Giants of the Game', 'Your votes are in and the teams are assembled and coming to a stadium near you! Join Brendan ''Biceps'' Owen and the rest of the NBA''s leading players for this blockbuster East versus West all-star game. Who will join the rarefied air with past MVP greats like Shaquille O''Neal, LeBron James, and Kobe Bryant? Don''t wait to see the highlights when you can experience it live!', 21, 4);
 -- Event 19
 insert into Event ( name, description, mediaitem_id, category_id) values ( 'Punch and Judy (with a Twist)', 'You may not be at a British seaside but you heard right! Bring your family to witness a new twist on this traditional classic dating back to the 1600s ... only this time, Mr. Punch (and his stick) have met "The 1%." Cheer (or jeer) from the crowd when you think Punch should use his stick on Mr. 1%. Fans agree, "It''s the best way to release your outrage at the wealthiest 1% without  being arrested!".', 22, 2);
-
 -- Show 1
 insert into Appearance ( event_id, venue_id) values ( 1, 1);
-
 -- Performance 1
 insert into Performance ( show_id, date) values ( 1, '2015-09-21 19:00:00');
-
 -- SectionAllocation 1
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (1, 1, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (1, 2, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (1, 3, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (1, 4, null, 0, 1);
-
 -- Performance 2
 insert into Performance ( show_id, date) values ( 1, '2015-09-22 19:00:00');
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (2, 1, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (2, 2, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (2, 3, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (2, 4, null, 0, 1);
-
 -- Show 2
 insert into Appearance ( event_id, venue_id) values ( 1, 2);
-
 -- Performance 3
 insert into Performance ( show_id, date) values ( 2, '2015-09-23 19:30:00');
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (3, 5, null, 0, 1);
@@ -201,7 +180,6 @@ insert into SectionAllocation(performance_id, section_id, allocated, occupiedcou
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (3, 9, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (3, 10, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (3, 11, null, 0, 1);
-
 -- Performance #4
 insert into Performance ( show_id, date) values ( 2, '2015-09-24 19:30:00');
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (4, 5, null, 0, 1);
@@ -211,27 +189,22 @@ insert into SectionAllocation(performance_id, section_id, allocated, occupiedcou
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (4, 9, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (4, 10, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (4, 11, null, 0, 1);
-
 -- Show 3
 insert into Appearance ( event_id, venue_id) values ( 2, 1);
-
 -- Performance 5
 insert into Performance ( show_id, date) values ( 3, '2015-09-25 17:00:00');
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (5, 1, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (5, 2, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (5, 3, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (5, 4, null, 0, 1);
-
 -- Performance 6
 insert into Performance ( show_id, date) values ( 3, '2015-09-25 19:30:00');
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (6, 1, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (6, 2, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (6, 3, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (6, 4, null, 0, 1);
-
 -- Show 4
 insert into Appearance ( event_id, venue_id) values ( 2, 2);
-
 -- Performance 7
 insert into Performance ( show_id, date) values ( 4, '2015-09-27 17:00:00');
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (7, 5, null, 0, 1);
@@ -241,7 +214,6 @@ insert into SectionAllocation(performance_id, section_id, allocated, occupiedcou
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (7, 9, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (7, 10, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (7, 11, null, 0, 1);
-
 -- Performance 8
 insert into Performance ( show_id, date) values ( 4, '2015-09-27 19:30:00');
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (8, 5, null, 0, 1);
@@ -251,42 +223,32 @@ insert into SectionAllocation(performance_id, section_id, allocated, occupiedcou
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (8, 9, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (8, 10, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (8, 11, null, 0, 1);
-
 --show 5
 insert into Appearance ( event_id, venue_id) values ( 3, 3);
-
 -- Performance 9
 insert into Performance ( show_id, date) values ( 5, '2015-11-01 21:00:00');
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (9, 12, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (9, 13, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (9, 14, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (9, 15, null, 0, 1);
-
 -- Show 6
 insert into Appearance ( event_id, venue_id) values ( 1, 5);
-
 -- Performance 10
 insert into Performance ( show_id, date) values ( 6, '2015-09-21 19:00:00');
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (10, 20, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (10, 21, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (10, 22, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (10, 23, null, 0, 1);
-
 -- Performance 11
 insert into Performance ( show_id, date) values ( 6, '2015-09-22 19:00:00');
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (11, 20, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (11, 21, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (11, 22, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (11, 23, null, 0, 1);
-
-
-
-
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (1, 1, 1, 219.50);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (1, 2, 1, 199.50);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (1, 3, 1, 179.50);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (1, 4, 1, 149.50);
-
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (2, 5, 1, 167.75);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (2, 6, 1, 197.75);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (2, 7, 1, 167.75);
@@ -301,13 +263,10 @@ insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values 
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (2, 9, 2, 145.0);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (2, 10, 2, 145.0);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (2, 11, 2, 112.5);
-
-
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (3, 1, 1, 219.50);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (3, 2, 1, 199.50);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (3, 3, 1, 179.50);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (3, 4, 1, 149.50);
-
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (4, 5, 1, 167.75);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (4, 6, 1, 197.75);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (4, 7, 1, 167.75);
@@ -315,12 +274,10 @@ insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values 
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (4, 9, 1, 155.0);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (4, 10, 1, 155.0);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (4, 11, 1, 122.5);
-
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (5, 12, 1, 219.50);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (5, 13, 1, 199.50);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (5, 14, 1, 179.50);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (5, 15, 1, 149.50);
-
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (6, 20, 1, 219.50);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (6, 21, 1, 199.50);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (6, 22, 1, 110);
