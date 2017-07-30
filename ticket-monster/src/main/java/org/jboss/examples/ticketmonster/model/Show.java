@@ -1,13 +1,23 @@
 package org.jboss.examples.ticketmonster.model;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OrderBy;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.NotNull;
 
 @Entity
+@Table(name="Appearance", uniqueConstraints = @UniqueConstraint(columnNames = { "event_id", "venue_id" }))
 public class Show {
 	
 	@Id
@@ -21,6 +31,13 @@ public class Show {
 	@ManyToOne
 	@NotNull
 	private Venue venue;
+	
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "show", cascade = CascadeType.ALL)
+    @OrderBy("date")
+    private Set<Performance> performances = new HashSet<Performance>();
+	
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "show", cascade = CascadeType.ALL)
+	private Set<TicketPrice> ticketPrices = new HashSet<TicketPrice>();
 
 	public Long getId() {
 		return id;
@@ -44,6 +61,22 @@ public class Show {
 
 	public void setVenue(Venue venue) {
 		this.venue = venue;
+	}
+	
+	public Set<Performance> getPerformances() {
+		return performances;
+	}
+
+	public void setPerformances(Set<Performance> performances) {
+		this.performances = performances;
+	}
+
+	public Set<TicketPrice> getTicketPrices() {
+		return ticketPrices;
+	}
+
+	public void setTicketPrices(Set<TicketPrice> ticketPrices) {
+		this.ticketPrices = ticketPrices;
 	}
 
 	@Override
@@ -80,8 +113,6 @@ public class Show {
 		} else if (!venue.equals(other.venue))
 			return false;
 		return true;
-	}
-	
-	
+	}	
 
 }

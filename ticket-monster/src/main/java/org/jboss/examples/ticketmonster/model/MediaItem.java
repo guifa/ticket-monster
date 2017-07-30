@@ -13,53 +13,20 @@ import javax.persistence.Id;
 
 import org.hibernate.validator.constraints.URL;
 
-/**
- * <p>
- * A reference to a media object such as images, sound bites, video recordings, that can be used in the application.
- * </p>
- * 
- * <p>
- * A media item contains the type of the media, which is required to render it correctly, as well as the URL at which the media
- * should be sourced.
- * </p>
- * 
- * @author Marius Bogoevici
- * @author Pete Muir
- */
-/*
- * We suppress the warning about not specifying a serialVersionUID, as we are still developing this app, and want the JVM to
- * generate the serialVersionUID for us. When we put this app into production, we'll generate and embed the serialVersionUID
- */
 @SuppressWarnings("serial")
 @Entity
 public class MediaItem implements Serializable {
 
-    /* Declaration of fields */
-
-    /**
-     * The synthetic id of the object.
-     */
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Long id;
 
-    /**
-     * <p>
-     * The type of the media, required to render the media item correctly.
-     * </p>
-     */
     @Enumerated(STRING)
     private MediaType mediaType;
 
-    /**
-     * <p>
-     * The URL from which the media item can be sourced
-     */
     @Column(unique = true)
     @URL
     private String url;
-
-    /* Boilerplate getters and setters */
 
     public Long getId() {
         return id;
